@@ -52,7 +52,7 @@ public class Main {
      * @param a нижняя граница числового диапазона
      * @param b верхняя граница числового диапазона
      * @param h шаг вычисления
-     * @return Контейнер Map<Double, Double>, ключем которого является аргумент функции,
+     * @return ссылка на коллекцию TreeMap<Double, Double>, ключем которой является аргумент функции,
      * а значением является результат вычисления функции
      */
     public static Map<Double, Double> findFunctionValuesInInterval(double a, double b, double h) {
@@ -74,6 +74,7 @@ public class Main {
      */
     public static void printValueTable(Map<Double, Double> map) {
 
+        System.out.printf("| %10c | %10c |", 'x', 'y');
         for (Map.Entry<Double, Double> entry: map.entrySet()) {
             System.out.printf("\n| %10f | %10f |" , entry.getKey(), entry.getValue());
         }
