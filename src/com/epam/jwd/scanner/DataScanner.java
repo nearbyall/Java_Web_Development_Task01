@@ -3,6 +3,10 @@ package com.epam.jwd.scanner;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+/**
+ * Класс реализующий ввод различных данных из консоли
+ * @author Vladislav Melnikov
+ */
 public class DataScanner {
 
     private static Scanner scanner = new Scanner(System.in);
