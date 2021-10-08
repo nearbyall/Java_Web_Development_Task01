@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("Введите площадь описанного около окружности квадрата: ");
         double a = DataScanner.enterAbsDoubleFromConsole();
-        System.out.printf("Площадь вписанного в окружность квадрата: %.2f", getSquareArea(a/2));
+        System.out.printf("Площадь вписанного в окружность квадрата: %.2f", squareArea(a/2));
 
     }
 
@@ -23,7 +23,7 @@ public class Main {
      * @param a
      * @return площадь квадрата
      */
-    public static double getSquareArea(double a) {
+    public static double squareArea(double a) {
 
         return a * a;
 
