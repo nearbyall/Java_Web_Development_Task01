@@ -29,5 +29,5 @@ public class PointLogic {
         return Math.sqrt(Math.pow(point.getX(), 2) + Math.pow(point.getY(), 2));
 
     }
-
+    
 }

@@ -15,9 +15,9 @@ public class Main {
         System.out.println("Введите n-ую секунду суток: ");
         int a = DataScanner.enterSecondOfDayFromConsole();
         System.out.printf("Полных часов: %d\n" +
-                "Полных минут: %d\n" +
-                "Полных секунд: %d\n",
-                getHours(a), getMinutes(a), a);
+                		  "Полных минут: %d\n" +
+                		  "Полных секунд: %d\n",
+                		  findHoursBySeconds(a), findMinutesBySeconds(a), a);
 
     }
 
@@ -26,7 +26,7 @@ public class Main {
      * @param a заданное кол-во секунд
      * @return полное кол-во минут
      */
-    public static int getMinutes(int a) {
+    public static int findMinutesBySeconds(int a) {
 
         return a / 60;
 
@@ -37,7 +37,7 @@ public class Main {
      * @param a заданное кол-во секунд
      * @return полное кол-во часов
      */
-    public static int getHours(int a) {
+    public static int findHoursBySeconds(int a) {
 
         return (a / 60) / 60;
 

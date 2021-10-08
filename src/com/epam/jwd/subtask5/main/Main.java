@@ -27,7 +27,7 @@ public class Main {
      */
     public static boolean isPerfectNumber(int a) {
 
-        return getDivisorsSum(a) == a;
+        return findDivisorsSum(a) == a;
 
     }
 
@@ -36,7 +36,7 @@ public class Main {
      * @param a заданное целое число
      * @return сумма всех собственных делителей заданного целого числа
      */
-    public static int getDivisorsSum(int a) {
+    public static int findDivisorsSum(int a) {
 
         int sum = 0;
 

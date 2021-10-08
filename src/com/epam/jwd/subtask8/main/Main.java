@@ -15,6 +15,7 @@ public class Main {
 
         System.out.println("Введите значение аргумента x функции: ");
 
+        //В контексте конкретно этой задачи может произойти деление на ноль
         double x = 0;
         do {
             x = DataScanner.enterDoubleFromConsole();

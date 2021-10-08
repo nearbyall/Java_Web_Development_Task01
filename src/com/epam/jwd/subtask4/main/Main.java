@@ -18,11 +18,11 @@ public class Main {
         int c = DataScanner.enterIntFromConsole();
         int d = DataScanner.enterIntFromConsole();
         System.out.println((isEvenNumber(a) && isEvenNumber(b))
-                                || (isEvenNumber(a) && isEvenNumber(c))
-                                || (isEvenNumber(a) && isEvenNumber(d))
-                                || (isEvenNumber(b) && isEvenNumber(c))
-                                || (isEvenNumber(b) && isEvenNumber(d))
-                                || (isEvenNumber(c) && isEvenNumber(d)));
+                        || (isEvenNumber(a) && isEvenNumber(c))
+                        || (isEvenNumber(a) && isEvenNumber(d))
+                        || (isEvenNumber(b) && isEvenNumber(c))
+                        || (isEvenNumber(b) && isEvenNumber(d))
+                        || (isEvenNumber(c) && isEvenNumber(d)));
 
     }
 

@@ -1,7 +1,5 @@
 package com.epam.jwd.subtask7.bean;
 
-import java.util.Objects;
-
 /**
  * Класс, реализующий точку в двумерном пространстве с координатными осями x и y
  * @author Vladislav Melnikov
@@ -37,17 +35,37 @@ public class Point {
         this.y = y;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Point point = (Point) o;
-        return Double.compare(point.getX(), getX()) == 0 && Double.compare(point.getY(), getY()) == 0;
-    }
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + " [x=" + x + ", y=" + y + "]";
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getX(), getY());
-    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(x);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(y);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null)
+			return false;
+		if (getClass() != o.getClass())
+			return false;
+		Point other = (Point) o;
+		if (Double.doubleToLongBits(x) != Double.doubleToLongBits(other.x))
+			return false;
+		if (Double.doubleToLongBits(y) != Double.doubleToLongBits(other.y))
+			return false;
+		return true;
+	}
+    
 }

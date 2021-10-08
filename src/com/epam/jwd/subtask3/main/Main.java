@@ -14,18 +14,9 @@ public class Main {
 
         System.out.println("Введите площадь описанного около окружности квадрата: ");
         double a = DataScanner.enterAbsDoubleFromConsole();
-        System.out.printf("Площадь вписанного в окружность квадрата: %.2f", squareArea(a/2));
-
-    }
-
-    /**
-     * Вычисление площади квадрата по заданной стороне
-     * @param a
-     * @return площадь квадрата
-     */
-    public static double squareArea(double a) {
-
-        return a * a;
+        System.out.printf("Площадь вписанного в окружность квадрата: %.2f\n"
+        				+ "Площадь вписанного квадрата всегда будет в два раза меньше.",
+        				a / 2);
 
     }
 

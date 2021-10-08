@@ -18,6 +18,8 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Введите значения границ числового диапазона [a,b]: ");
+        
+        //В контексте конкретно этой задачи необходимо проверить корректность вводимых границ
         double a = 0, b = 0;
         do {
             a = DataScanner.enterDoubleFromConsole();
@@ -25,6 +27,8 @@ public class Main {
         } while (a > b); //Необходимо проверить правильность введенных границ
 
         System.out.println("Введите значение шага h: ");
+        
+      //В контексте конкретно этой задачи необходимо проверить корректность вводимого шага
         double h = 0;
         do {
             h = DataScanner.enterDoubleFromConsole();
