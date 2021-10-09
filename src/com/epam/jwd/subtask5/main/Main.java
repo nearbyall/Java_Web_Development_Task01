@@ -13,8 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Введите любое целое число: ");
-        int a = DataScanner.enterIntFromConsole();
+        System.out.println("Введите любое натуральное число: ");
+        int a = DataScanner.enterNaturalFromConsole();
         System.out.println(isPerfectNumber(a));
 
     }

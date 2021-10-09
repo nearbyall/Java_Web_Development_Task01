@@ -15,8 +15,6 @@ public class MainTest {
 			actualBoolean[i] = Main.isLeapYear(actualYear[i]);
 		}
 		
-		
-		
 		boolean[] expectedBoolean = {false, true, true, true, true};
 		for (int i = 0; i < actualBoolean.length; i++) {
 			assertEquals(expectedBoolean[i], actualBoolean[i]);

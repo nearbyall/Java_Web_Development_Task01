@@ -17,12 +17,7 @@ public class Main {
         int b = DataScanner.enterIntFromConsole();
         int c = DataScanner.enterIntFromConsole();
         int d = DataScanner.enterIntFromConsole();
-        System.out.println((isEvenNumber(a) && isEvenNumber(b))
-                        || (isEvenNumber(a) && isEvenNumber(c))
-                        || (isEvenNumber(a) && isEvenNumber(d))
-                        || (isEvenNumber(b) && isEvenNumber(c))
-                        || (isEvenNumber(b) && isEvenNumber(d))
-                        || (isEvenNumber(c) && isEvenNumber(d)));
+        System.out.println(areThereTwoEvenNumbers(a, b, c, d));
 
     }
 
@@ -36,6 +31,23 @@ public class Main {
 
         return a % 2 == 0;
 
+    }
+    
+    /**
+     * Проверяет, являются ли хотя бы два числа из заданных четырех четными
+     * @param a, b, c, d заданные целые числа
+     * @return true если среди заданных чисел как минимум двое четные
+     * 		   false если среди заданных чисел менее двух четные
+     */
+    public static boolean areThereTwoEvenNumbers(int a, int b, int c, int d) {
+    	
+    	return (isEvenNumber(a) && isEvenNumber(b))
+            || (isEvenNumber(a) && isEvenNumber(c))
+            || (isEvenNumber(a) && isEvenNumber(d))
+            || (isEvenNumber(b) && isEvenNumber(c))
+            || (isEvenNumber(b) && isEvenNumber(d))
+            || (isEvenNumber(c) && isEvenNumber(d));
+    	
     }
 
 }

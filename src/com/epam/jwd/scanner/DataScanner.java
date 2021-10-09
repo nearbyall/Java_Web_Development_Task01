@@ -41,6 +41,21 @@ public class DataScanner {
 
     }
 
+    public static int enterNaturalFromConsole() {
+
+    	int a = 0;
+    	
+    	while (a < 1) {
+    		while (!scanner.hasNextInt()) {
+                scanner.next();
+            }
+    		a = scanner.nextInt();
+    	}
+
+        return a;
+
+    }
+    
     public static int enterYearFromConsole() {
 
         Pattern pattern = Pattern.compile("\\d{4}");
