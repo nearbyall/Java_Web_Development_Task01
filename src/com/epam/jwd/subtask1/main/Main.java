@@ -43,7 +43,7 @@ public class Main {
                 return 4;
             case 3, 7:
                 return 9;
-            case 4:
+            case 4, 6:
                 return 6;
             case 5:
                 return 5;
