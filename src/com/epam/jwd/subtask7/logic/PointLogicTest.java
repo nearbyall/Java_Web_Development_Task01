@@ -14,9 +14,9 @@ public class PointLogicTest {
 		
 		PointLogic logic = PointLogic.getInstance();
 
-        Point[] actualPoint = {new Point(-9, 17), new Point(23, 0),
-        		new Point(19, 58), new Point(-23, -23), new Point(-17, 19)};
-        double[] actualNumber = {0, 0, 0, 0, 0};
+        	Point[] actualPoint = {new Point(-9, 17), new Point(23, 0),
+        	new Point(19, 58), new Point(-23, -23), new Point(-17, 19)};
+        	double[] actualNumber = {0, 0, 0, 0, 0};
 		for (int i = 0; i < actualNumber.length; i++) {
 			actualNumber[i] = logic.findDistanceToCenter(actualPoint[i]);
 		}
