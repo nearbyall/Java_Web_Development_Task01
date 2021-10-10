@@ -7,10 +7,12 @@ import java.util.regex.Pattern;
  * Класс реализующий ввод различных данных из консоли
  * @author Vladislav Melnikov
  */
-public class DataScanner {
+public final class DataScanner {
 
     private static Scanner scanner = new Scanner(System.in);
 
+    private DataScanner() {}
+    
     public static int enterIntFromConsole() {
 
         while (!scanner.hasNextInt()) {

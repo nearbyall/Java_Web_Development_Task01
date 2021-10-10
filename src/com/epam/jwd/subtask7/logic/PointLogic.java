@@ -24,7 +24,7 @@ public class PointLogic {
      * @param point объект класса Point
      * @return расстояния от точки до начала координатных осей
      */
-    public double getDistanceToCenter(Point point) {
+    public double findDistanceToCenter(Point point) {
 
         return Math.sqrt(Math.pow(point.getX(), 2) + Math.pow(point.getY(), 2));
 

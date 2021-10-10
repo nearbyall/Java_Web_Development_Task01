@@ -28,7 +28,7 @@ public class Main {
      */
     public static double calculateCircleArea(double r) {
 
-        return Math.acos(-1) * Math.pow(r, 2); // Выражение Math.acos(-1) представляет из себя число пи
+        return Math.PI * Math.pow(r, 2);
 
     }
 
@@ -39,7 +39,7 @@ public class Main {
      */
     public static double calculateCircleLenth(double r) {
 
-        return 2 * Math.acos(-1) * r; // Выражение Math.acos(-1) представляет из себя число пи
+        return 2 * Math.PI * r;
 
     }
 

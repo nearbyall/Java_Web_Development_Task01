@@ -9,14 +9,14 @@ public class MainTest {
 	@Test
 	public void lastDigitOfNumberTest() {
 		
-		int[] actual = {14, 100, 19, 0, -8, 33};
-		for (int i = 0; i < actual.length; i++) {
-			actual[i] = Main.lastDigitOfNumber(actual[i]);
+		int[] actualNumber = {14, 100, 19, 0, -8, 33};
+		for (int i = 0; i < actualNumber.length; i++) {
+			actualNumber[i] = Main.lastDigitOfNumber(actualNumber[i]);
 		}
 		
-		int[] expected = {4, 0, 9, 0, 8, 3};
-		for (int i = 0; i < actual.length; i++) {
-			assertEquals(expected[i], actual[i]);
+		int[] expectedNumber = {4, 0, 9, 0, 8, 3};
+		for (int i = 0; i < actualNumber.length; i++) {
+			assertEquals(expectedNumber[i], actualNumber[i]);
 		}
 		
 	}
@@ -24,14 +24,14 @@ public class MainTest {
 	@Test
 	public void lastDigitOfSquaredNumberTest() {
 		
-		int[] actual = {14, 100, 19, 0, -8, 33, 21, 17, 2, 6};
-		for (int i = 0; i < actual.length; i++) {
-			actual[i] = Main.lastDigitOfSquaredNumber(actual[i]);
+		int[] actualNumber = {14, 100, 19, 0, -8, 33, 21, 17, 2, 6};
+		for (int i = 0; i < actualNumber.length; i++) {
+			actualNumber[i] = Main.lastDigitOfSquaredNumber(actualNumber[i]);
 		}
 		
 		int[] expected = {6, 0, 1, 0, 4, 9, 1, 9, 4, 6};
-		for (int i = 0; i < actual.length; i++) {
-			assertEquals(expected[i], actual[i]);
+		for (int i = 0; i < actualNumber.length; i++) {
+			assertEquals(expected[i], actualNumber[i]);
 		}
 		
 	}

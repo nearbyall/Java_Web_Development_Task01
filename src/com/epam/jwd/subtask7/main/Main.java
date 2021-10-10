@@ -27,8 +27,8 @@ public class Main {
 
         PointLogic pointLogic = PointLogic.getInstance();
 
-        double r1 = pointLogic.getDistanceToCenter(A);
-        double r2 = pointLogic.getDistanceToCenter(B);
+        double r1 = pointLogic.findDistanceToCenter(A);
+        double r2 = pointLogic.findDistanceToCenter(B);
 
         if (r1 < r2) {
             System.out.println("Точка А ближе к центру");
